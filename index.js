@@ -26,3 +26,9 @@ const driversByName = function(drivers){
   })
   return newArray
 }
+
+const totalRevenue = function(drivers){
+  return drivers.reduce(a,b){
+    return a + b.revenue
+  }
+}
